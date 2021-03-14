@@ -1,4 +1,4 @@
-#Python stuff by Jeff
+#Python stuff by Jeff Lewis
 
 values = [43, 56, 67, 89, 45]
 weights = [4, 8, 2, 2, 4]
