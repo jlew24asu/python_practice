@@ -1,0 +1,3 @@
+hello = "awesomeness"
+
+print(hello)
