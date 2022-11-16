@@ -49,3 +49,15 @@ L1 = [10,20,30,50]
 print(L1)
 fun(L1)
 print(L1)
+
+
+#####
+
+print('this is new code')
+
+name = input("whats your name:   ")
+
+def greet_user(username):
+    print(f"Hello {username.title()}")
+    
+greet_user(name)

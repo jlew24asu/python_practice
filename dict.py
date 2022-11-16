@@ -42,3 +42,75 @@ for name,program in favorite_programming.items():
     print(f"{name.title()}'s favorite program is {program.title()}")
 
 
+####
+
+print("this is new code")
+
+favorite_programming = {
+    
+    'jeff': 'python',
+    'sam': 'C++',
+    'eddy': 'ruby',
+    'stephen': 'saltstack'
+}
+
+for name in favorite_programming.keys():
+    print(name.title())
+    
+###
+
+print('this is new code')
+
+favorite_programming = {
+    
+    'jeff': 'python',
+    'sam': 'C++',
+    'eddy': 'ruby',
+    'stephen': 'saltstack'
+}
+
+for name in sorted(favorite_programming.keys()):
+    print(f"{name.title()}, thanks for everything")
+    
+    
+####
+print("this is new code for empty list")
+
+aliens = []
+
+for alien_number in range (30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+    elif alien['color'] == 'yellow':
+        alien['color'] = 'red'
+        alien['speed'] = 'fast'
+        alien['points'] = 15
+
+for alien in aliens[:4]:
+    print(alien)
+print("....")
+
+
+######
+
+print('this is new code again')
+
+favorite_programming = {
+    
+    'jeff': ['ruby', 'python'],
+    'sam': ['C++'],
+    'eddy': ['chef', 'ruby'],
+    'stephen': ['k8s', 'saltstack']
+}
+
+for name, program in favorite_programming.items():
+    print(f"\n{name.title()}'s favorite programs are:")
+    for programming in program:
+        print(f"\t{programming.title()}")
+
