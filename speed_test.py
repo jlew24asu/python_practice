@@ -20,21 +20,22 @@ from colorama import Fore, init
 
 init(autoreset=True)
 
-print(Fore.GREEN + "GETTING BEST AVAILABLE SERVERS, UPLOADING & DOWNLOADING SPEED.....")
+print(f"{Fore.GREEN}GETTING BEST AVAILABLE SERVERS, UPLOADING & DOWNLOADING SPEED.....")
+
 
 # initializing the SpeedTest instance
 st = speedtest.Speedtest()
 
 st.get_best_server()  # Get the most optimal server available
-for i in tqdm(range(10), colour="green", desc="Finding Optimal Server"):
+for _ in tqdm(range(10), colour="green", desc="Finding Optimal Server"):
     sleep(0.05)
 
 st.download()  # Get downloading speed
-for i in tqdm(range(10), colour="cyan", desc="Getting Download Speed"):
+for _ in tqdm(range(10), colour="cyan", desc="Getting Download Speed"):
     sleep(0.05)
 
 st.upload()  # Get uploading Speed
-for i in tqdm(range(10), colour="red", desc="Getting Upload Speed"):
+for _ in tqdm(range(10), colour="red", desc="Getting Upload Speed"):
     sleep(0.05)
 
 # Save all these elements in a dictionary
